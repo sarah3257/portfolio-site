@@ -1,0 +1,22 @@
+.about-container {
+    background-color: #f9f9f9; /* צבע רקע בהיר */
+    padding: 40px; /* ריווח פנימי */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל */
+    max-width: 800px; /* גודל מקסימלי */
+    margin: 0 auto; /* מרכז את התוכן */
+}
+
+.about-header {
+    font-size: 2.5rem; /* גודל כותרת */
+    text-align: center; /* מרכז את הכותרת */
+    color: #333; /* צבע טקסט */
+    margin-bottom: 30px; /* ריווח מתחת לכותרת */
+}
+
+.about-text {
+    font-size: 1.2rem; /* גודל טקסט */
+    line-height: 1.6; /* ריווח בין השורות */
+    color: #555; /* צבע טקסט */
+    margin-bottom: 20px; /* ריווח מתחת לפסקה */
+}

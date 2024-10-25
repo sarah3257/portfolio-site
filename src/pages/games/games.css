@@ -1,0 +1,17 @@
+/* כפתור GitHub */
+.github-button-game {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #404347;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+      
+.github-button-game:hover {
+  background-color: #0056b3;
+}

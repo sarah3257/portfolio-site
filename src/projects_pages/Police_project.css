@@ -1,0 +1,117 @@
+.police-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .police-sidebar {
+    position: absolute;
+    left: 0;
+    top: 120px; /* מתחיל בגובה של התמונות */
+  }
+
+
+  .thumbnail {
+    width: 250px;
+    border-radius: 8px;
+  }
+  
+  .police-content {
+    flex: 1;
+    padding-left: 100px; /* למקם את התוכן לצד התמונה */
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* קישורים למסמכים: Design ו-Presentation */
+  .project-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .project-link-img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-link-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* כפתור GitHub */
+  .github-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #404347;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* תעודת התעודה בצד ימין */
+  .certificate-section {
+    position: absolute;
+    right: 30px;
+    top: 380px;
+  }
+  
+  .certificate-img {
+    width: 260px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* תיאור הפרויקט */
+  .project-description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .project-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  /* גלריית תמונות */
+.project-gallery-police {
+   
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* עוטף את התמונות בשורות חדשות */
+  gap: 20px; /* מרווח גדול יותר בין התמונות */
+  padding-left: 150px;
+  justify-content: center; /* מרכז את התמונות */
+}
+
+.gallery-img-police {
+    padding: 10px;
+  width: calc(50% - 20px); /* כל תמונה תתפוס 50% מהרוחב פחות המרווח */
+  max-width: 480px; /* מקסימום גודל לכל תמונה */
+  transition: transform 0.3s ease;
+}
+  
+
+

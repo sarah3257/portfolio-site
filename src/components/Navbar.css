@@ -1,0 +1,52 @@
+.navbar {
+    background: linear-gradient(to right, #040d0f, #b9c0c0); /* מעבר צבעים מדהים */
+   /* padding: 10px 40px;  רווחים מסביב */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל */
+    position: sticky; /* דבק בעמדה עליונה */
+    top: 0; /* מעל כל התוכן */
+    z-index: 1000; /* כדי שה-navbar תמיד יהיה מעל */
+    display: flex; /* שימוש ב-flexbox */
+    justify-content: space-between; /* פיזור שווה בין האלמנטים */
+    align-items: center; /* יישור במרכז */
+}
+
+.navbar ul {
+    list-style-type: none; /* ללא נקודות ברשימה */
+    padding: 0;
+    display: flex; /* הצגה כ-flex */
+    justify-content: space-around; /* רווח שווה בין הפריטים */
+    flex: 1; /* תן לרשימה תפקיד של גובה */
+}
+
+.navbar li {
+    position: relative; /* עבור אנימציה בעת מעבר עכבר */
+}
+
+.navbar a {
+    text-decoration: none; /* ללא קו תחתון */
+    color: white; /* צבע טקסט לבן */
+    font-weight: bold; /* טקסט מודגש */
+    padding: 10px 20px; /* רווחים פנימיים */
+    border-radius: 25px; /* פינות מעוגלות */
+    transition: background 0.3s, transform 0.3s; /* אנימציה נעימה */
+}
+
+/* קו תחתון כשעוברים על קישור */
+.navbar a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: white; /* צבע הקו */
+}
+
+.navbar a:hover:after {
+    width: 100%; /* כאשר עובר על הקישור */
+}
+
+/* הוספת סגנון ל-logo */
+.logo {
+    height: 100px; /* גובה הלוגו (כדאי להקטין אותו) */
+    width: auto; /* גובה אוטומטי על מנת לשמור על יחס גובה-רוחב */
+    margin-left: 0px; /* רווח בין הלוגו לקצה ה-navbar */
+}
