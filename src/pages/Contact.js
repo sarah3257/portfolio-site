@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import './Contact.css';  // הקובץ CSS שכבר עיצבנו
+import './Contact.css'; // CSS file for styling
 
 const Contact = () => {
   const [messageStatus, setMessageStatus] = useState('');
@@ -9,10 +9,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "YOUR_SERVICE_ID", // הכניסי את ה-Service ID שלך
-      "YOUR_TEMPLATE_ID", // הכניסי את ה-Template ID שלך
+      "service_6zhahmk",         // Service ID
+      "template_r04cypj",        // Template ID
       e.target,
-      "YOUR_USER_ID" // הכניסי את ה-User ID שלך
+      "iVUZFWcg2ibcGI8fd"        // Public Key (User ID)
     )
     .then((result) => {
       console.log(result.text);
@@ -23,7 +23,7 @@ const Contact = () => {
       setMessageStatus('Failed to send message, please try again.');
     });
 
-    e.target.reset(); // לאפס את הטופס לאחר שליחה
+    e.target.reset(); // Reset form after submission
   };
 
   return (
@@ -37,7 +37,7 @@ const Contact = () => {
           <textarea name="message" placeholder="Your Message" required></textarea>
           <button type="submit">Send</button>
         </form>
-        <p>{messageStatus}</p>  {/* תצוגה של סטטוס ההודעה */}
+        <p>{messageStatus}</p> {/* Message status display */}
       </div>
     </div>
   );
