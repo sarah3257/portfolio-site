@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2"; // ספרייה להודעות alert מעוצבות
 import './Contact.css'; // CSS file for styling
 
 const Contact = () => {
@@ -17,10 +18,24 @@ const Contact = () => {
     .then((result) => {
       console.log(result.text);
       setMessageStatus('Message sent successfully!');
+      
+      // Alert מעוצב להצלחה
+      Swal.fire({
+        icon: 'success',
+        title: 'Thank you for reaching out!',
+        text: 'See you soon - Sarah'
+      });
     })
     .catch((error) => {
       console.log(error.text);
       setMessageStatus('Failed to send message, please try again.');
+      
+      // Alert מעוצב לבעיה בשליחת ההודעה
+      Swal.fire({
+        icon: 'error',
+        title: 'System detected an issue',
+        text: 'Please contact me via phone: 053-3134632 or email: sarirom6@gmail.com'
+      });
     });
 
     e.target.reset(); // Reset form after submission
