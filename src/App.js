@@ -21,6 +21,7 @@ import MVC_java from './projects_pages/MVC_java'
 import HighSchool from './projects_pages/HighSchool'
 import SE_Studies from './projects_pages/SE_Studies'
 import Bootcamp from './projects_pages/Bootcamp'
+import Book_police from './projects_pages/Book_police'
 function App() {
   return (
     <Router>
@@ -50,6 +51,9 @@ function App() {
           <Route path="/projects_pages/HighSchool" element={<HighSchool/>} />
           <Route path="/projects_pages/SE_Studies" element={<SE_Studies/>} />
           <Route path="/projects_pages/Bootcamp" element={<Bootcamp/>} />
+
+          <Route path="/projects_pages/Book_police" element={<Book_police/>} />
+
 
         </Routes>
       </div>

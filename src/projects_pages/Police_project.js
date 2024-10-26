@@ -17,7 +17,7 @@ const Police_project = () => {
 
         {/* קישורים למסמכים: Design ו-Presentation */}
         <div className="project-links">
-          <img src={require('../assets/project_book.png')} alt="project_book" className="project-link-img" onClick={() => window.location.href='/projects_pages/project_book'} />
+          <img src={require('../assets/project_book.png')} alt="project_book" className="project-link-img" onClick={() => window.location.href='/projects_pages/Book_police'} />
         </div>
 
         {/* כפתור קישור ל-GitHub */}
