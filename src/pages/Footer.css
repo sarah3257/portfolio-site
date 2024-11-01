@@ -1,0 +1,32 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .footer-text {
+    margin: 0; /* הסרת מרווחי ברירת מחדל של p */
+    font-size: 1.2em; /* הקטנת גודל טקסט נוסף */
+  }
+  .footer-text i {
+    color: #fff; /* צבע לבן לאייקונים */
+    margin: 0 5px; /* מרווח קל סביב האייקונים */
+  }

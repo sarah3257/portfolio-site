@@ -22,6 +22,9 @@ import HighSchool from './projects_pages/HighSchool'
 import SE_Studies from './projects_pages/SE_Studies'
 import Bootcamp from './projects_pages/Bootcamp'
 import Book_police from './projects_pages/Book_police'
+import Footer from './pages/Footer';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 function App() {
   return (
     <Router>
@@ -56,6 +59,7 @@ function App() {
 
 
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

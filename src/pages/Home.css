@@ -1,227 +1,64 @@
-/* Home.css */
 .home-container {
-    height: 100vh; /* גובה של 100% מחלון הדפדפן */
-    background-image: url('../assets/Home_page_background.png'); /* הנתיב לתמונה */
-    background-size: cover; /* שהרקע יכסה את כל העמוד */
-    background-position: center; /* מיקום הרקע במרכז */
-    background-repeat: no-repeat; /* לא לחזור על התמונה */
-    display: flex;
-    justify-content: center; /* מרכז את התוכן */
-    align-items: center; /* מרכז את התוכן אנכית */
-    color: rgb(21, 20, 20); /* צבע הטקסט */
-  }
-  
+  height: 90vh; /* גובה מעט נמוך יותר כדי להעלות את התוכן */
+  background-image: url('../assets/Home_page_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* מעלה את התוכן למעלה יותר */
+  padding-top: 50px; /* רווח עליון כדי לשלוט בדיוק על המיקום */
+  color: rgb(21, 20, 20);
+}
+
 .home-content {
-    text-align: center; /* מרכז את הטקסט */
-  }
-  
+  text-align: center;
+}
+
 .size-font-Sarah {
-  font-size: 6rem; /* גודל טקסט */
-  margin-bottom: 20px; /* רווח מתחת לכותרת */
-  color: #333; /* צבע טקסט */
-  text-align: center; /* מרכז את הטקסט */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* צל לטקסט */
-  font-family: 'Arial', sans-serif; /* גופן */
-  transition: transform 0.3s; /* אנימציה רכה לשינוי */
+  font-size: 6rem;
+  color: #333;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s;
+  margin-bottom: 5px; /* מרווח תחתון קטן יותר */
 }
 
 .size-font-Sarah:hover {
-  transform: scale(1.05); /* הגדלה קטנה כשמעבירים מעל */
-}
-  .size-font-Sarah {
-  font-size: 6rem; /* גודל טקסט */
-  margin-bottom: 20px; /* רווח מתחת לכותרת */
-  color: #333; /* צבע טקסט */
-  text-align: center; /* מרכז את הטקסט */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* צל לטקסט */
-  font-family: 'Arial', sans-serif; /* גופן */
-  transition: transform 0.3s; /* אנימציה רכה לשינוי */
+  transform: scale(1.05);
 }
 
-.size-font-Sarah:hover {
-  transform: scale(1.05); /* הגדלה קטנה כשמעבירים מעל */
-}
-  .size-font-Sarah {
-  font-size: 6rem; /* גודל טקסט */
-  margin-bottom: 20px; /* רווח מתחת לכותרת */
-  color: #333; /* צבע טקסט */
-  text-align: center; /* מרכז את הטקסט */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* צל לטקסט */
-  font-family: 'Arial', sans-serif; /* גופן */
-  transition: transform 0.3s; /* אנימציה רכה לשינוי */
+p {
+  font-size: 3rem;
+  margin-bottom: 5px; /* רווח קטן יותר מתחת ל-p */
 }
 
-.size-font-Sarah:hover {
-  transform: scale(1.05); /* הגדלה קטנה כשמעבירים מעל */
-}
-  .size-font-Sarah {
-  font-size: 6rem; /* גודל טקסט */
-  margin-bottom: 20px; /* רווח מתחת לכותרת */
-  color: #333; /* צבע טקסט */
-  text-align: center; /* מרכז את הטקסט */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* צל לטקסט */
-  font-family: 'Arial', sans-serif; /* גופן */
-  transition: transform 0.3s; /* אנימציה רכה לשינוי */
-}
 
-.size-font-Sarah:hover {
-  transform: scale(1.05); /* הגדלה קטנה כשמעבירים מעל */
+.software{
+  font-size: 3rem;
+  margin-bottom: 5px; /* רווח קטן יותר מתחת ל-p */
+ }
+.software:hover{
+  transform: scale(1.01)
 }
-  .size-font-Sarah {
-  font-size: 6rem; /* גודל טקסט */
-  margin-bottom: 20px; /* רווח מתחת לכותרת */
-  color: #333; /* צבע טקסט */
-  text-align: center; /* מרכז את הטקסט */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* צל לטקסט */
-  font-family: 'Arial', sans-serif; /* גופן */
-  transition: transform 0.3s; /* אנימציה רכה לשינוי */
-}
-
-.size-font-Sarah:hover {
-  transform: scale(1.05); /* הגדלה קטנה כשמעבירים מעל */
-}
-  p {
-    font-size: 3rem;
-    margin-bottom: 40px;
-  }
-  
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
+.project-button {
+  width: 250px;
+  height: auto;
   cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
+  transition: transform 0.3s ease;
 }
 
 .project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
+  transform: scale(1.1);
 }
 
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
+.contact-info {
+  margin-top: 5px; /* רווח עליון קטן יותר */
+  font-size: 1.2em;
 }
 
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 150px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
-}
- .project-button {
-  width: 250px; /* גודל התמונה (אפשר לשנות לפי הצורך) */
-  height: auto; /* שומר על פרופורציות התמונה */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* מוסיף אפקט מעבר */
-}
-
-.project-button:hover {
-  transform: scale(1.1); /* הגדלה בעת מעבר עכבר */
+.contact-info h4 {
+  font-size: 1rem;
+  margin: 5px 0;
 }
