@@ -11,8 +11,8 @@ const Police_project = () => {
       {/* תוכן העמוד */}
       <div className="police-content">
         {/* תמונה של התעודה בצד ימין */}
-        <div className="certificate-section">
-          <img src={require('../assets/Certificate_School.png')} alt="Certificate" className="certificate-img" />
+        <div className="certificate-section-police">
+          <img src={require('../assets/Certificate_School.png')} alt="Certificate" className="certificate-img-police" />
         </div>
 
         {/* קישורים למסמכים: Design ו-Presentation */}

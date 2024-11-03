@@ -1,6 +1,5 @@
 import React from 'react';
 import './General_education.css'; // עיצוב לדף הכללי של ההשכלה
-
 const HighSchool = () => {
   return (
     <div className="education-container2">

@@ -1,15 +1,16 @@
 .home-container {
-  height: 90vh; /* גובה מעט נמוך יותר כדי להעלות את התוכן */
+  height: 90vh;
   background-image: url('../assets/Home_page_background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* מעלה את התוכן למעלה יותר */
-  padding-top: 50px; /* רווח עליון כדי לשלוט בדיוק על המיקום */
+  align-items: flex-start;
+  padding-top: 50px;
   color: rgb(21, 20, 20);
 }
+
 
 .home-content {
   text-align: center;
@@ -22,26 +23,23 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
   transition: transform 0.3s;
-  margin-bottom: 5px; /* מרווח תחתון קטן יותר */
+  margin-bottom: 5px;
 }
 
 .size-font-Sarah:hover {
   transform: scale(1.05);
 }
 
-p {
+p, .software {
   font-size: 3rem;
-  margin-bottom: 5px; /* רווח קטן יותר מתחת ל-p */
+  margin-bottom: 5px;
 }
 
 
-.software{
-  font-size: 3rem;
-  margin-bottom: 5px; /* רווח קטן יותר מתחת ל-p */
- }
-.software:hover{
-  transform: scale(1.01)
+.software:hover {
+  transform: scale(1.01);
 }
+
 .project-button {
   width: 250px;
   height: auto;
@@ -54,11 +52,30 @@ p {
 }
 
 .contact-info {
-  margin-top: 5px; /* רווח עליון קטן יותר */
+  margin-top: 5px;
   font-size: 1.2em;
 }
 
 .contact-info h4 {
   font-size: 1rem;
   margin: 5px 0;
+}
+
+/* התאמה למובייל */
+@media (max-width: 768px) {
+  .size-font-Sarah {
+    font-size: 3rem; /* גודל קטן יותר עבור מובייל */
+  }
+  
+  p, .software {
+    font-size: 1.8rem; /* טקסט קטן יותר */
+  }
+  
+  .project-button {
+    width: 150px; /* כפתור קטן יותר */
+  }
+  
+  .contact-info h4 {
+    font-size: 0.9rem; /* גודל טקסט קטן יותר */
+  }
 }

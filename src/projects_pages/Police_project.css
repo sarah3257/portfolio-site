@@ -70,14 +70,14 @@
   }
   
   /* תעודת התעודה בצד ימין */
-  .certificate-section {
+  .certificate-section-police {
     position: absolute;
     right: 30px;
     top: 380px;
   }
   
-  .certificate-img {
-    width: 260px;
+  .certificate-img-police {
+    width: 210px;
     height: auto;
     border-radius: 8px;
   }

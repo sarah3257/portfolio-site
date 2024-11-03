@@ -1,42 +1,81 @@
 .education-container {
-    text-align: center;
-    padding: 40px;
-    background-color: rgb(209, 208, 210);
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #333; /* צבע כהה לכותרת הראשית */
-  }
-  
-  .education-items-container {
-    display: flex;
-    justify-content: space-around; /* רווחים שווים בין הפריטים */
-    flex-wrap: wrap; /* עוטף שורה במידה ואין מספיק מקום */
-  }
-  
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(209, 208, 210);
+  border-radius: 15px; /* פינות מעוגלות לקונטיינר */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* צל לקונטיינר */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333; /* צבע כהה לכותרת הראשית */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* צל לטקסט */
+}
+
+.education-items-container {
+  display: flex;
+  justify-content: space-between; /* רווחים שווים בין הפריטים */
+  flex-wrap: wrap; /* עוטף שורה במידה ואין מספיק מקום */
+  gap: 20px; /* רווחים בין הפריטים */
+}
+
+.education-item {
+  flex: 1 1 30%; /* מאפשר לכל פריט לתפוס 30% מהרוחב */
+  max-width: 300px; /* גודל מקסימלי של כל פריט */
+  margin-bottom: 20px; /* רווח בין פריטים */
+  text-align: center;
+  transition: transform 0.3s ease; /* אנימציית מעבר */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #555; /* צבע כהה קל לכותרות */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* צל לטקסט */
+}
+
+.education-image {
+  width: 100%; /* תמונות יתפסו 100% מהרוחב של הקונטיינר */
+  height: auto; /* גובה התמונה מתעדכן בהתאם לרוחב */
+  border-radius: 10px; /* פינות מעוגלות */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל קטן לתמונות */
+  transition: transform 0.3s ease; /* אנימציית מעבר */
+}
+
+.education-image:hover {
+  transform: scale(1.05); /* הגדלה קלה במעבר עכבר */
+}
+
+.education-item:hover {
+  transform: translateY(-5px); /* הזזה קלה של הפריט למעלה במעבר עכבר */
+}
+
+/* מדיה קווריז לרספונסיביות */
+@media (max-width: 768px) {
   .education-item {
-    margin-bottom: 40px;
-    flex-basis: 30%; /* גודל בסיסי לכל פריט  */
-    text-align: center;
+      flex: 1 1 45%; /* כל פריט יתפוס 45% מהרוחב במסכים קטנים */
   }
-  
+
+  h1 {
+      font-size: 28px; /* הקטנת גודל הכותרת */
+  }
+
   h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #555; /* צבע כהה קל לכותרות */
+      font-size: 20px; /* הקטנת גודל הכותרת המשנית */
   }
-  
-  .education-image {
-    width: 300px; /* גודל התמונה */
-    height: auto;
-    border-radius: 10px; /* פינות מעוגלות */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל קטן לתמונות */
-    transition: transform 0.3s ease; /* אנימציית מעבר */
+}
+
+@media (max-width: 480px) {
+  .education-item {
+      flex: 1 1 100%; /* כל פריט יתפוס 100% מהרוחב במסכים קטנים מאוד */
   }
-  
-  .education-image:hover {
-    transform: scale(1.05); /* הגדלה קלה במעבר עכבר */
+
+  h1 {
+      font-size: 24px; /* הקטנת גודל הכותרת */
   }
-  
+
+  h2 {
+      font-size: 18px; /* הקטנת גודל הכותרת המשנית */
+  }
+}

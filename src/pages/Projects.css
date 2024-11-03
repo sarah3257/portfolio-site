@@ -1,46 +1,80 @@
 .projects-container {
-    padding: 40px;
-    background-color: rgb(209, 208, 210);
-  }
-  
+  padding: 40px;
+  background-color: rgb(209, 208, 210);
+}
+
+.projects-header {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 פרויקטים בכל שורה */
+  gap: 40px; /* יותר רווחים בין הכרטיסים */
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 20px; /* יותר רווח בתוך הכרטיסים */
+}
+
+.project-card:hover {
+  transform: scale(1.08); /* אפקט הגדלה */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* רווח מתחת לתמונה */
+}
+
+.project-card h2 {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* מדיה קווריז לרספונסיביות */
+@media (max-width: 768px) {
   .projects-header {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    text-align: center;
+      font-size: 2rem; /* גודל כותרת קטן יותר */
   }
-  
+
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 פרויקטים בכל שורה */
-    gap: 40px; /* יותר רווחים בין הכרטיסים */
+      grid-template-columns: repeat(2, 1fr); /* 2 פרויקטים בכל שורה */
+      gap: 20px; /* רווח קטן יותר בין הכרטיסים */
   }
-  
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    padding: 20px; /* יותר רווח בתוך הכרטיסים */
-  }
-  
-  .project-card:hover {
-    transform: scale(1.08); /* אפקט הגדלה */
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px; /* רווח מתחת לתמונה */
-  }
-  
+
   .project-card h2 {
-    margin: 10px 0;
-    font-size: 1.4rem;
-    text-align: center;
+      font-size: 1.2rem; /* גודל טקסט קטן יותר */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .projects-header {
+      font-size: 1.5rem; /* גודל כותרת קטן מאוד */
+  }
+
+  .projects-grid {
+      grid-template-columns: 1fr; /* פרויקט אחד בכל שורה */
+      gap: 10px; /* רווח קטן מאוד בין הכרטיסים */
+  }
+
+  .project-card {
+      padding: 15px; /* רווח פנימי קטן יותר */
+  }
+
+  .project-card h2 {
+      font-size: 1rem; /* גודל טקסט קטן מאוד */
+  }
+}

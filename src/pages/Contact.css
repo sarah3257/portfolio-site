@@ -4,7 +4,7 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 35%; /* שינית את רוחב הקונטיינר כדי שיהיה ממוקד */
+    width: 35%; /* שינת רוחב הקונטיינר כדי שיהיה ממוקד */
     position: absolute;
     top: 50%;
     right: 10%;
@@ -65,4 +65,37 @@
     justify-content: flex-end; /* כדי למקם את התוכן בצד ימין */
     padding-right: 50px; /* מרווח מהקצה הימני */
     color: #151414;
+}
+
+/* מדיה קווריז לרספונסיביות */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 80%; /* רוחב קונטיינר רחב יותר במסכים קטנים יותר */
+        padding: 20px; /* פחות רווח פנימי */
+        right: 5%; /* להזיז את הקונטיינר לעיגול המסך */
+    }
+
+    .contact-header {
+        font-size: 28px; /* גודל כותרת קטן יותר */
+    }
+
+    .contact-form button {
+        font-size: 16px; /* גודל כפתור קטן יותר */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        width: 95%; /* רוחב כמעט מלא במסכים קטנים מאוד */
+        padding: 15px; /* פחות רווח פנימי */
+        right: 0; /* להסיר את הרווח מהצד הימני */
+    }
+
+    .contact-header {
+        font-size: 24px; /* גודל כותרת קטן מאוד */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* גודל כפתור קטן מאוד */
+    }
 }

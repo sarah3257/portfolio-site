@@ -1,6 +1,5 @@
 .navbar {
     background: linear-gradient(to right, #040d0f, #b9c0c0); /* מעבר צבעים מדהים */
-   /* padding: 10px 40px;  רווחים מסביב */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל */
     position: sticky; /* דבק בעמדה עליונה */
     top: 0; /* מעל כל התוכן */
@@ -8,6 +7,7 @@
     display: flex; /* שימוש ב-flexbox */
     justify-content: space-between; /* פיזור שווה בין האלמנטים */
     align-items: center; /* יישור במרכז */
+    padding: 5px 20px; /* רווחים מסביב - צמצם רווחים */
 }
 
 .navbar ul {
@@ -26,9 +26,10 @@
     text-decoration: none; /* ללא קו תחתון */
     color: white; /* צבע טקסט לבן */
     font-weight: bold; /* טקסט מודגש */
-    padding: 10px 20px; /* רווחים פנימיים */
-    border-radius: 25px; /* פינות מעוגלות */
+    padding: 8px 15px; /* רווחים פנימיים - צמצם רווחים */
+    border-radius: 20px; /* פינות מעוגלות */
     transition: background 0.3s, transform 0.3s; /* אנימציה נעימה */
+    font-size: 0.9rem; /* צמצם גודל הטקסט */
 }
 
 /* קו תחתון כשעוברים על קישור */
@@ -46,7 +47,7 @@
 
 /* הוספת סגנון ל-logo */
 .logo {
-    height: 100px; /* גובה הלוגו (כדאי להקטין אותו) */
+    height: 80px; /* גובה הלוגו (כדאי להקטין אותו) */
     width: auto; /* גובה אוטומטי על מנת לשמור על יחס גובה-רוחב */
     margin-left: 0px; /* רווח בין הלוגו לקצה ה-navbar */
 }

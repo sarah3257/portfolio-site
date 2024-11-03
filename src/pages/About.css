@@ -20,3 +20,32 @@
     color: #555; /* צבע טקסט */
     margin-bottom: 20px; /* ריווח מתחת לפסקה */
 }
+
+/* מדיה קווריז לרספונסיביות */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px; /* ריווח פנימי קטן יותר במובייל */
+    }
+
+    .about-header {
+        font-size: 2rem; /* גודל כותרת קטן יותר */
+    }
+
+    .about-text {
+        font-size: 1rem; /* גודל טקסט קטן יותר */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 15px; /* ריווח פנימי עוד יותר קטן */
+    }
+
+    .about-header {
+        font-size: 1.5rem; /* גודל כותרת קטן מאוד */
+    }
+
+    .about-text {
+        font-size: 0.9rem; /* גודל טקסט קטן מאוד */
+    }
+}

@@ -73,14 +73,30 @@
   .certificate-section {
     position: absolute;
     right: 80px;
-    top: 500px;
+    top: 460px;
+
+ 
   }
   
   .certificate-img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
+   
+    width: 100%; /* תתאים את התמונה לרוחב המיכל */
+  max-width: 300px; /* רוחב מקסימלי לתמונה */
+  height: auto; /* גובה אוטומטי שיתאים לגובה התמונה */
+  margin: 20px 0; /* הוסף רווח מעל ומתחת לתמונה */
+   
   }
+  @media (max-width: 600px) {
+    .certificate-img {
+        max-width: 200px; /* מקסימום רוחב קטן יותר במסכים קטנים */
+    }
+}
+
+@media (max-width:200px) {
+    .certificate-img {
+        max-width: 150px; /* מקסימום רוחב אפילו קטן יותר במסכים עוד יותר קטנים */
+    }
+}
   
   /* תיאור הפרויקט */
   .project-description {
@@ -88,7 +104,10 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* סדר את התוכן בעמודה */
+    align-items: center; /* מרכז את התוכן */
+    
   }
   
   .project-description ul {
@@ -135,3 +154,22 @@ transition: transform 0.3s ease;
   transform: scale(1.05);
 }
 
+@media (max-width: 480px) {
+  .project-title {
+      font-size: 1.2rem; /* הקטנת גודל הטקסט עוד יותר */
+  }
+  .gallery-img, .gallery-img-game {
+      width: 100%; /* לכל תמונה 100% מהרוחב */
+  }
+  .project-description{
+   
+      flex-direction: column; /* תן לתוכן להתארגן בעמודה */
+      align-items: center; /* מרכז את התוכן */
+    
+  }
+ 
+ 
+ 
+ 
+ 
+}
