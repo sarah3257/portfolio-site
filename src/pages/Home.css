@@ -1,6 +1,6 @@
 .home-container {
   height: 90vh;
-  background-image: url('../assets/Home_page_background.png');
+  background-image: url('../assets/Home_page_background.png'); /* רקע עבור מסך מחשב */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,6 @@
   padding-top: 50px;
   color: rgb(21, 20, 20);
 }
-
 
 .home-content {
   text-align: center;
@@ -34,7 +33,6 @@ p, .software {
   font-size: 3rem;
   margin-bottom: 5px;
 }
-
 
 .software:hover {
   transform: scale(1.01);
@@ -61,10 +59,14 @@ p, .software {
   margin: 5px 0;
 }
 
-/* התאמה למובייל */
+/* התאמה לרספונסיביות עבור מובייל */
 @media (max-width: 768px) {
+  .home-container {
+    background-image: url('../assets/background_Tel.png'); /* רקע עבור טלפון */
+  }
+  
   .size-font-Sarah {
-    font-size: 3rem; /* גודל קטן יותר עבור מובייל */
+    font-size: 3rem; /* גודל טקסט קטן יותר */
   }
   
   p, .software {

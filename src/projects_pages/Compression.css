@@ -1,175 +1,179 @@
+/* עיצוב כללי למחשבים */
 .compression-container {
-    display: flex;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-
-  .compression-sidebar {
-    position: absolute;
-    left: 0;
-    top: 120px; /* מתחיל בגובה של התמונות */
-  }
-
-
-  .thumbnail {
-    width: 250px;
-    border-radius: 8px;
-  }
-  
-  .compression-content {
-    flex: 1;
-    padding-left: 100px; /* למקם את התוכן לצד התמונה */
-  }
-  
-  .project-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* קישורים למסמכים: Design ו-Presentation */
-  .project-links {
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .project-link-img {
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .project-link-img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* כפתור GitHub */
-  .github-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #404347;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .github-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* תעודת התעודה בצד ימין */
-  .certificate-section {
-    position: absolute;
-    right: 80px;
-    top: 460px;
-
- 
-  }
-  
-  .certificate-img {
-   
-    width: 100%; /* תתאים את התמונה לרוחב המיכל */
-  max-width: 300px; /* רוחב מקסימלי לתמונה */
-  height: auto; /* גובה אוטומטי שיתאים לגובה התמונה */
-  margin: 20px 0; /* הוסף רווח מעל ומתחת לתמונה */
-   
-  }
-  @media (max-width: 600px) {
-    .certificate-img {
-        max-width: 200px; /* מקסימום רוחב קטן יותר במסכים קטנים */
-    }
-}
-
-@media (max-width:200px) {
-    .certificate-img {
-        max-width: 150px; /* מקסימום רוחב אפילו קטן יותר במסכים עוד יותר קטנים */
-    }
-}
-  
-  /* תיאור הפרויקט */
-  .project-description {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; /* סדר את התוכן בעמודה */
-    align-items: center; /* מרכז את התוכן */
-    
-  }
-  
-  .project-description ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  /* גלריית תמונות */
-.project-gallery {
-  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap; /* עוטף את התמונות בשורות חדשות */
-  gap: 20px; /* מרווח גדול יותר בין התמונות */
-  padding-left: 160px;
-  justify-content: center; /* מרכז את התמונות */
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.compression-sidebar {
+  position: absolute;
+  left: 0;
+  top: 120px;
+}
 
+.thumbnail {
+  width: 250px;
+  border-radius: 8px;
+}
 
-.gallery-img {
-  padding: 10px;
-  width: calc(50% - 20px); /* כל תמונה תתפוס 50% מהרוחב פחות המרווח */
-  max-width: 480px; /* מקסימום גודל לכל תמונה */
-  border-radius: 0px;
+.compression-content {
+  flex: 1;
+  padding-left: 100px;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.project-link-img {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
-  
-project-gallery-game{
-  margin-top: 20px;
-display: flex;
-flex-wrap: wrap; /* עוטף את התמונות בשורות חדשות */
-gap: 20px; /* מרווח גדול יותר בין התמונות */
-padding-left: 150px;
-justify-content: center; /* מרכז את התמונות */
-}
-.gallery-img-game {
-  padding: 20px;
-width: calc(50% - 90px); /* כל תמונה תתפוס 50% מהרוחב פחות המרווח */
-max-width: 480px; /* מקסימום גודל לכל תמונה */
-border-radius: 0px;
-transition: transform 0.3s ease;
-}
-  
-.gallery-img-game:hover {
+
+.project-link-img:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
+.github-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #404347;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #0056b3;
+}
+
+.certificate-section {
+  position: absolute;
+  right: 80px;
+  top: 460px;
+}
+
+.certificate-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.project-description {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-description ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.project-gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 160px;
+  justify-content: center;
+}
+
+.gallery-img {
+  padding: 10px;
+  width: calc(50% - 20px);
+  max-width: 480px;
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img-game {
+  padding: 20px;
+  width: calc(50% - 90px);
+  max-width: 480px;
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img-game:hover, .gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* התאמות למסכים קטנים יותר - טלפונים */
+@media (max-width: 600px) {
+  .certificate-img {
+      max-width: 200px;
+  }
+
   .project-title {
-      font-size: 1.2rem; /* הקטנת גודל הטקסט עוד יותר */
+      font-size: 1.5rem;
   }
+
+  .project-description {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .compression-container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .project-title {
+      font-size: 1.2rem;
+  }
+
+  .project-links, .project-gallery, .project-description, .certificate-section {
+      padding: 0;
+      margin: 0;
+      align-items: center;
+  }
+
   .gallery-img, .gallery-img-game {
-      width: 100%; /* לכל תמונה 100% מהרוחב */
+      width: 100%;
+      max-width: 100%;
   }
-  .project-description{
-   
-      flex-direction: column; /* תן לתוכן להתארגן בעמודה */
-      align-items: center; /* מרכז את התוכן */
-    
+
+  .certificate-section {
+      position: static;
+      margin-top: 20px;
   }
- 
- 
- 
- 
- 
+
+  .certificate-img {
+      max-width: 150px;
+  }
+
+  .compression-content {
+      padding-left: 0;
+  }
+
+  .project-links {
+      flex-direction: column;
+      gap: 10px;
+  }
 }
